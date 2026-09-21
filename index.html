@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tính chỉ số BMI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Tính chỉ số BMI</h1>
+      <form id="bmi-form">
+        <label>
+          Cân nặng (kg)
+          <input type="number" name="weight" step="0.1" min="0" required />
+        </label>
+        <label>
+          Chiều cao (cm)
+          <input type="number" name="height" step="0.1" min="0" required />
+        </label>
+        <button type="submit">Tính BMI</button>
+      </form>
+      <p id="result" role="status"></p>
+    </main>
+
+    <script src="bmi.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
